@@ -1,0 +1,101 @@
+.about{
+    padding-bottom: $base-padding * 3;
+
+    &__bio-image{
+        height: 60vh;
+        width: 100%;
+        background:
+    linear-gradient(
+        to right,
+        rgba($primary-color, 0.9),
+        rgba($primary-color, 0.3)
+    ),
+    url('/img/model-1.jpg') center top;
+    background-size: cover;
+    flex-direction: column;
+    p{
+        margin-bottom: $base-margin * 2;
+        
+    }
+    }
+    &__bio{
+        width: 80%;
+        text-align: center;
+        margin-bottom: 2.5rem;
+        .text-secondary{
+            padding-bottom: $base-padding * 2;
+            font-size: 3rem;
+        }
+        .btn{
+            background: $white;
+            color: $secondary-color;
+            border: 2px solid $white;
+            padding: 0.8rem 1.2rem;
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            border-radius: 4px;
+            @include transition-ease;
+
+            &:hover{
+                background: transparent;
+                color: $white;
+            }
+
+            
+        }
+        .skill-text{
+            color: $secondary-color;
+        }
+        .skill-para{
+            margin-bottom: 3rem;
+        }
+    }
+
+    .jobs{
+        width: 60vw;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        
+        &__job{
+            background: lighten($primary-color, 10%);
+            padding: $base-padding;
+            border-bottom: 3px solid $secondary-color;
+            
+            h2, h3{
+                margin: $base-margin 0;
+            }
+            h6{
+                margin: 0.3rem 0 0.6rem;
+                font-weight: 400;
+                font-size: 1rem;
+                color: lighten($secondary-color, 20%);
+            }
+            p{
+                font-size: 0.9rem;
+            }
+        }
+    }
+    p{
+        line-height: 1.6;
+    }
+    
+}
+
+@media only screen and (min-width:992px){
+    .about{
+        footer{
+            .social-icons{
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .copy-text{
+               transform: rotate(90deg) translate(-7rem, -7rem);
+            }
+        }
+    }
+  }

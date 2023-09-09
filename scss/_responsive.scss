@@ -1,0 +1,138 @@
+
+@include media-md{
+    main {
+        
+        .social-icons{
+            position: relative;
+            text-align: center;
+        }
+        footer{
+            position: inherit;
+            text-align: center;
+        }
+        .home{
+            padding-top: 12vh;
+            &__name{
+                font-size: 3rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            h2{
+                font-size: 1.2rem;
+            }
+            h3{
+                font-size: 0.9rem;
+            }
+           
+        }
+
+    }
+
+    .about {
+        &__bio-image{
+            padding-top: 12vh;
+            height: 100%; 
+        }
+        .jobs{
+            width: 75vw;
+        }
+        footer{
+            position: inherit !important;
+            padding-top: 4rem !important;
+            .social-icons{
+                left: 0;
+            }
+        }
+    }
+    .projects{
+        &__items{
+            width: 90vw;
+            h3{
+                font-size: 0.9rem;
+            }
+        }
+        footer{
+            position: inherit !important;
+            padding-top: 4rem !important;
+            .social-icons{
+                left: 0;
+            }
+        }
+        .text-secondary{
+            text-align: center;
+        }
+        &__bio-image {
+            padding-top: 5rem;
+            height: 100%; 
+            .text-secondary{
+                line-height: 1.5;
+            }       
+          }
+    }    
+    footer{
+        left: 0;
+        right: 0 !important;
+    }
+
+}
+
+@include media-sm{
+    main {
+        .home{
+            padding-top: 12vh;
+        }
+    }
+
+    .h-btn{
+        margin-top: 1rem;
+        font-size: 0.8rem !important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+    .projects{
+        &__items{
+            grid-template-columns: 1fr;
+        }
+        &__bio-image {
+            
+            .text-secondary{
+                font-size: 1.2rem;
+            }       
+          }
+              
+    } 
+    
+
+}
+
+@include media-xs{
+    main{
+        .home{
+            padding-top: 25vh;    
+           
+        }
+    }
+    .h-btn{
+        padding: 8px 10px !important;
+    }
+    .about{
+        .jobs{
+            &__job h2, &__job h3{
+                line-height: 1.5;
+            }
+        }
+    }
+    .projects{
+        &__items{
+            padding: 1.5rem 1rem 1.5rem;
+            h3{
+                line-height: 26px;
+            }
+        }
+       
+    } 
+    
+}
+
+
+

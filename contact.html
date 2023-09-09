@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact - Shankar</title>
+</head>
+<body>
+    
+    <header class="position-fixed">
+        <div class="menu-btn position-absolute">
+            <span class="menu-btn__hamburger position-absolute"></span>
+        </div>
+        <nav class="nav position-fixed">
+            <ul class="nav-menu d-flex align-items-center justify-content-center">
+                <li class="nav-menu__item">
+                    <a href="./index.html" class="nav-menu__link">Home</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="./about.html" class="nav-menu__link">About Me</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="./projects.html" class="nav-menu__link">My Projects</a>
+                </li>
+                <li class="nav-menu__item active">
+                    <a href="./contact.html" class="nav-menu__link">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+        
+          
+         
+
+            <h2>Contact Me..</h2>
+
+      <div class="contact__list">
+        <div class="contact__add">
+            <div class="contact__email">
+                <i class="fa fa-envelope"></i> Email
+                <div class="text-secondary">chinnasankar.ui@gmail.com</div>
+            </div>
+            <div class="contact__phone">
+                <i class="fa fa-phone-square"></i> Phone
+                <div class="text-secondary">+91-9885353503</div>
+            </div>
+            <div class="contact__address">
+                <i class="fa fa-map"></i> Address
+                <div class="text-secondary">Kukatpally, Hyderabad, TS - 500072</div>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h2>Get In Touch</h2>
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <input type="text" placeholder="Enter your name" id="name" name="name" required>
+                <input type="email" placeholder="Enter your email" id="email" name="email" required>
+                <input type="text" placeholder="Enter your phone" id="phone" name="phone" required>
+                <textarea name="message" id="message" cols="20" rows="5" placeholder="How can i help you"></textarea>
+                <button type="submit" id="submit">submit</button>
+            </form>
+        </div>
+      </div>
+         
+        
+
+          
+
+          
+
+    
+      <footer class="position-fixed">
+        <div class="social-icons">
+            <a href="#!" class="fa fa-twitter "></a>
+            <a href="#!" class="fa fa-facebook "></a>
+            <a href="#!" class="fa fa-linkedin "></a>
+            <a href="#!" class="fa fa-whatsapp "></a>
+            <a href="#!" class="fa fa-github "></a>
+        </div>
+
+        <div class="copy-text">
+           <p> Copyright &copy; 2023 | All Rights Reserved.</p>
+        </div>
+       </footer>
+        </section>
+      </main>
+
+<script src="./js/main.js"></script>
+</body>
+</html>

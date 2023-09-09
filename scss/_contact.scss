@@ -1,0 +1,92 @@
+.contact {
+    height: 100%;
+    padding-top: 15vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: 
+      linear-gradient(
+        to right,
+        rgba($primary-color, 0.9),
+        rgba($primary-color, 0.3)
+      ),
+      url('../img/model-1.jpg') center top;
+    background-size: cover;
+  
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+  
+    &__list {
+     
+      font-size: 1.5rem;
+      width: 65vw;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        padding-bottom: 2rem;
+        align-items: center;
+    }
+    &__add {
+      > div{margin-bottom: 2rem;}
+      .text-secondary{
+        font-size: 1.2rem;
+        padding-top: 10px;
+        font-weight: 400;
+      }  
+    }
+    
+  .contact-form{
+    background: $white;
+    border-radius: 10px;
+    padding: 1.8rem 2rem;
+    h2{
+      color: $primary-color;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    input, textarea{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 10px 0;
+      background: #f5f5f5;
+      color: #000;
+      padding: 16px 14px;
+      border: 0;
+      outline: none;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    button{
+      outline: none;
+      border: 0;
+      background:$secondary-color;
+      color: $white;
+      padding: 12px 18px;
+      font-size: 1rem;
+      width: 100%;
+      margin: 2rem auto 0;
+      text-align: center;
+      display: block;
+      text-transform: uppercase;
+      border-radius: 4px;
+      border: 2px solid $secondary-color;
+      cursor: pointer;
+      &:hover{
+        background: transparent;
+        color: $secondary-color;
+
+        
+      }
+    }
+    
+  }
+    .social-icons {
+      position: fixed;
+      margin-top: 2rem;
+    }
+  }

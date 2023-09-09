@@ -1,0 +1,36 @@
+
+$positions:('static', 'relative', 'absolute', 'fixed', 'sticky', 'inherit', 'initial', 'revert', 'unset');
+
+@each $posit in $positions {
+    .position-#{$posit}{
+        position: #{$posit};
+    }
+}
+
+$displays: ('block', 'flex', 'inline-block', 'inline', 'none');
+
+@each $display in $displays{
+    .d-#{$display}{
+        display: #{$display};
+    }
+}
+
+$alignments: ("center", "space-between", "space-around", "space-evenly", "flex-start", "flex-end");
+
+@each $align in $alignments{
+    .justify-content-#{$align}{
+        justify-content: #{$align};
+    }
+    .justify-items-#{$align}{
+        justify-items: #{$align};
+    }
+
+    .align-items-#{$align}{
+        align-items: #{$align};
+    }
+
+    .content-#{$align}{
+        align-content: #{$align};
+    }
+    
+}

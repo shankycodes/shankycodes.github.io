@@ -1,0 +1,35 @@
+@mixin d-flex{
+    display: flex;
+}
+
+@mixin transition-ease{
+    transition: all 0.5s ease-in-out;
+}
+
+@function set-text-color($t-color){
+    @if (lightness($t-color) > 40%){
+        @return #000;
+    }@else{
+        @return #fff;
+    }
+
+}
+
+@mixin main-button{
+    @include transition-ease;
+    border-radius: 6px;
+    padding: 8px 14px;
+    border-width: 2px;
+    border-style: solid;
+    font-size: 0.96rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 2rem;
+    background: transparent;
+        border-color: $white;
+        color: $white;
+    &:hover{
+        background: $white;
+        // border-color: $secondary-color;
+        color: $secondary-color;
+    }
+}
