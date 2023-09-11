@@ -56,7 +56,8 @@
         </div>
         <div class="contact-form">
             <h2>Get In Touch</h2>
-            <form onsubmit="sendEmail(); reset(); return false;">
+            <!-- <form onsubmit="sendEmail(); reset(); return false;"> -->
+            <form method="post" action="./sendmail.php" enctype="multipart/form-data" class="form">
                 <input type="text" placeholder="Enter your name" id="name" name="name" required>
                 <input type="email" placeholder="Enter your email" id="email" name="email" required>
                 <input type="text" placeholder="Enter your phone" id="phone" name="phone" required>
@@ -90,5 +91,21 @@
       </main>
 
 <script src="./js/main.js"></script>
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+        Host : "smtp.gmail.com",
+        Username : "ksankarui@gmail.com",
+        Password : "Sankar@1234",
+        To : 'chinnasankarui@gmail.com',
+        From : 'raj@gmail.com',
+        Subject : "New Contact Form",
+        Body : "dakfad"
+            }).then(
+            message => alert(message)
+        );
+    }
+</script> -->
 </body>
 </html>
