@@ -1,5 +1,5 @@
 .projects {
-    padding-bottom: 2rem;
+    // padding-bottom: 2rem;
   
     &__bio-image {
       height: 40vh;
@@ -96,7 +96,9 @@
     .fa-angle-double-right{
         margin-left: 2px;
     }
-
+    footer{
+      padding-top: $base-padding * 3;
+  }
     
     
   }
@@ -104,6 +106,7 @@
   @media only screen and (min-width:992px){
     .projects{
         footer{
+          position: relative;
             .social-icons{
                 position: fixed;
                 display: flex;
@@ -111,9 +114,9 @@
                 align-items: center;
                 justify-content: center;
             }
-            .copy-text{
-               transform: rotate(90deg) translate(-7rem, -7rem);
-            }
+            // .copy-text{
+            //    transform: rotate(90deg) translate(-7rem, -7rem);
+            // }
         }
     }
   }

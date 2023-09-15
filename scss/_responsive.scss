@@ -37,16 +37,17 @@
             width: 75vw;
         }
         footer{
-            position: inherit !important;
+            position: relative !important;
             padding-top: 4rem !important;
             .social-icons{
-                left: 0;
+                // left: 0;
+                position: fixed !important;
             }
         }
     }
     .projects{
         &__items{
-            width: 90vw;
+            width: 80vw;
             h3{
                 font-size: 0.9rem;
             }
@@ -55,7 +56,8 @@
             position: inherit !important;
             padding-top: 4rem !important;
             .social-icons{
-                left: 0;
+                // left: 0;
+                position: fixed;
             }
         }
         .text-secondary{

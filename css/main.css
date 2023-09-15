@@ -206,13 +206,28 @@
   border-bottom: 1px solid #fff;
 }
 .home__name--last {
-  color: #ff652f;
+  color: #ff630b;
   font-weight: 700;
 }
 .home .h-btn {
   margin-top: 4rem;
 }
 
+@media only screen and (min-width: 768px) {
+  footer .social-icons-right {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .social-icons-right p {
+    display: inline-block;
+    margin-right: 1.5rem;
+    font-size: 0.9rem;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .home footer .social-icons {
     position: fixed;
@@ -320,14 +335,14 @@
           transform: translateX(100vw);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  color: #ff652f;
+  color: #ff630b;
 }
 .nav-menu__item.open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 .nav-menu__item.active > a {
-  color: #ff652f;
+  color: #ff630b;
 }
 .nav-menu__link {
   font-size: 1.6rem;
@@ -335,7 +350,7 @@
   font-weight: 300;
 }
 .nav-menu__link:hover {
-  color: #ff652f;
+  color: #ff630b;
 }
 
 .nav-menu__item:nth-child(1) {
@@ -358,9 +373,6 @@
           transition-delay: 0.65s;
 }
 
-.about {
-  padding-bottom: 2.25rem;
-}
 .about__bio-image {
   height: 60vh;
   width: 100%;
@@ -386,7 +398,7 @@
 }
 .about__bio .btn {
   background: #ffffff;
-  color: #ff652f;
+  color: #ff630b;
   border: 2px solid #ffffff;
   padding: 0.8rem 1.2rem;
   font-size: 1.125rem;
@@ -400,7 +412,7 @@
   color: #ffffff;
 }
 .about__bio .skill-text {
-  color: #ff652f;
+  color: #ff630b;
 }
 .about__bio .skill-para {
   margin-bottom: 3rem;
@@ -415,7 +427,7 @@
 .about .jobs__job {
   background: #414141;
   padding: 0.75rem;
-  border-bottom: 3px solid #ff652f;
+  border-bottom: 3px solid #ff630b;
 }
 .about .jobs__job h2, .about .jobs__job h3 {
   margin: 0.75rem 0;
@@ -424,7 +436,7 @@
   margin: 0.3rem 0 0.6rem;
   font-weight: 400;
   font-size: 1rem;
-  color: #ffb195;
+  color: #ffa471;
 }
 .about .jobs__job p {
   font-size: 0.9rem;
@@ -432,8 +444,14 @@
 .about p {
   line-height: 1.6;
 }
+.about footer {
+  padding-top: 2.25rem;
+}
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
+  .about footer {
+    position: relative;
+  }
   .about footer .social-icons {
     position: fixed;
     display: -webkit-box;
@@ -454,9 +472,6 @@
     -webkit-transform: rotate(90deg) translate(-7rem, -7rem);
             transform: rotate(90deg) translate(-7rem, -7rem);
   }
-}
-.projects {
-  padding-bottom: 2rem;
 }
 .projects__bio-image {
   height: 40vh;
@@ -486,7 +501,7 @@
 .projects__bio-image h1 {
   font-size: 2.2rem;
   padding: 2rem;
-  color: #ff652f;
+  color: #ff630b;
   display: inline;
 }
 .projects__items {
@@ -503,7 +518,7 @@
   width: 100%;
 }
 .projects__item h2 {
-  color: #ff652f;
+  color: #ff630b;
   font-weight: 700;
   font-size: 1.6rem;
 }
@@ -513,7 +528,7 @@
   margin: 1.6rem 0 0;
 }
 .projects__item h3 span {
-  background: #ffb195;
+  background: #ffa471;
   padding: 2px 10px;
   border-radius: 8px;
   margin-right: 10px;
@@ -527,8 +542,8 @@
 }
 .projects .btn {
   background: transparent;
-  color: #ff652f;
-  border-color: #ff652f;
+  color: #ff630b;
+  border-color: #ff630b;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   border-radius: 6px;
@@ -542,7 +557,7 @@
   margin-left: 2px;
 }
 .projects .btn:hover {
-  background: #ff652f;
+  background: #ff630b;
   color: #ffffff;
 }
 .projects .btn:hover .fa-external-link {
@@ -553,8 +568,14 @@
 .projects .fa-angle-double-right {
   margin-left: 2px;
 }
+.projects footer {
+  padding-top: 2.25rem;
+}
 
 @media only screen and (min-width: 992px) {
+  .projects footer {
+    position: relative;
+  }
   .projects footer .social-icons {
     position: fixed;
     display: -webkit-box;
@@ -570,10 +591,6 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .projects footer .copy-text {
-    -webkit-transform: rotate(90deg) translate(-7rem, -7rem);
-            transform: rotate(90deg) translate(-7rem, -7rem);
   }
 }
 .contact {
@@ -650,7 +667,7 @@
 .contact .contact-form button {
   outline: none;
   border: 0;
-  background: #ff652f;
+  background: #ff630b;
   color: #ffffff;
   padding: 12px 18px;
   font-size: 1rem;
@@ -660,12 +677,12 @@
   display: block;
   text-transform: uppercase;
   border-radius: 4px;
-  border: 2px solid #ff652f;
+  border: 2px solid #ff630b;
   cursor: pointer;
 }
 .contact .contact-form button:hover {
   background: transparent;
-  color: #ff652f;
+  color: #ff630b;
 }
 .contact .social-icons {
   position: fixed;
@@ -703,14 +720,14 @@
     width: 75vw;
   }
   .about footer {
-    position: inherit !important;
+    position: relative !important;
     padding-top: 4rem !important;
   }
   .about footer .social-icons {
-    left: 0;
+    position: fixed !important;
   }
   .projects__items {
-    width: 90vw;
+    width: 80vw;
   }
   .projects__items h3 {
     font-size: 0.9rem;
@@ -720,7 +737,7 @@
     padding-top: 4rem !important;
   }
   .projects footer .social-icons {
-    left: 0;
+    position: fixed;
   }
   .projects .text-secondary {
     text-align: center;
@@ -813,7 +830,7 @@ h1, h2, h3 {
 }
 
 .text-secondary {
-  color: #ff652f;
+  color: #ff630b;
 }
 
 a {
@@ -842,7 +859,7 @@ main .social-icons a {
   transition: all 0.5s ease-in-out;
 }
 main .social-icons a:hover {
-  color: #ff652f;
+  color: #ff630b;
 }
 
 footer {
@@ -863,7 +880,7 @@ img {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   border-radius: 6px;
-  padding: 8px 14px;
+  padding: 10px 14px;
   border-width: 2px;
   border-style: solid;
   font-size: 0.96rem;
@@ -877,5 +894,38 @@ img {
 }
 .h-btn:hover {
   background: #ffffff;
-  color: #ff652f;
+  color: #ff630b;
+}
+
+.WhatsAppIcons {
+  background-color: #30cd45;
+  width: 34px;
+  height: 34px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.WhatsAppIcons {
+  margin-bottom: 10px;
+}
+.WhatsAppIcons:hover {
+  color: #ffffff;
+}
+
+footer .social-icons-right .fa {
+  margin: 0 6px;
+  font-size: 1.4rem;
+}
+
+.sticky {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(86, 86, 86, 0.9)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right, rgba(86, 86, 86, 0.9), rgba(255, 255, 255, 0.3));
 }/*# sourceMappingURL=main.css.map */
