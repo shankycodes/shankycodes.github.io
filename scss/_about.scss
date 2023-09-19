@@ -1,5 +1,5 @@
 .about{
-    padding-bottom: $base-padding * 3;
+   
 
     &__bio-image{
         height: 60vh;
@@ -80,12 +80,16 @@
     p{
         line-height: 1.6;
     }
+    footer{
+        padding-top: $base-padding * 3;
+    }
     
 }
 
-@media only screen and (min-width:992px){
+@media only screen and (min-width:768px){
     .about{
         footer{
+            position: relative;
             .social-icons{
                 position: fixed;
                 display: flex;

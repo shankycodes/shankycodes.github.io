@@ -22,7 +22,8 @@
     &__list {
      
       font-size: 1.5rem;
-      width: 65vw;
+      width: 900px;
+      max-width: 90%;
         margin: 2rem auto 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;

@@ -77,3 +77,33 @@ img{
     margin-left: 14px;
     margin-right: 14px;
   }
+
+  .WhatsAppIcons{
+    background-color: #30cd45;
+    width: 34px;
+    height: 34px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .WhatsAppIcons{
+    margin-bottom: 10px;
+    &:hover{
+        color: $white;
+    }
+  }
+  footer{
+    .social-icons-right{
+        
+        .fa{
+            margin: 0 6px;
+            font-size: 1.4rem;
+        }
+      
+    }
+  }
+
+  .sticky{
+    background: linear-gradient(to right, rgb(105 100 100), rgb(105 102 102 / 90%));
+  }
