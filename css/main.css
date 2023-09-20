@@ -704,7 +704,7 @@
     text-align: center;
   }
   main .home {
-    padding-top: 12vh;
+    padding-top: 25vh;
   }
   main .home__name {
     font-size: 3rem;
@@ -764,13 +764,10 @@
   .contact .text-secondary {
     line-height: 1.6;
   }
-  .social-icons-right > p {
-    margin-bottom: 20px;
-  }
 }
 @media screen and (max-width: 767px) {
   main .home {
-    padding-top: 12vh;
+    padding-top: 24vh;
   }
   .h-btn {
     margin-top: 1rem;
@@ -805,6 +802,9 @@
   }
   .main-contact {
     height: auto;
+  }
+  .social-icons-right > p {
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 480px) {
