@@ -1,3 +1,9 @@
+window.addEventListener('scroll', function() {
+    let header = document.querySelector('.sticky_header');
+    header.classList.toggle('sticky', window.scrollY > 10);
+  });
+
+
 var menuBtn = document.querySelector('.menu-btn');
 var hamburger = document.querySelector('.menu-btn__hamburger');
 
@@ -30,7 +36,4 @@ function toggleMenu() {
 }
 
 
-window.addEventListener('scroll', function() {
-    let header = document.querySelector('header');
-    header.classList.toggle('sticky', window.scrollY > 50);
-  });
+

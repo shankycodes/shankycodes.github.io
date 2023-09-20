@@ -664,6 +664,11 @@
   border-radius: 4px;
   font-size: 14px;
 }
+.contact .contact-form input:focus, .contact .contact-form textarea:focus {
+  border: 2px solid #ff630b;
+  background-color: #ffffff;
+  color: #000000;
+}
 .contact .contact-form button {
   outline: none;
   border: 0;
@@ -759,6 +764,9 @@
   .contact .text-secondary {
     line-height: 1.6;
   }
+  .social-icons-right > p {
+    margin-bottom: 20px;
+  }
 }
 @media screen and (max-width: 767px) {
   main .home {
@@ -794,6 +802,9 @@
   }
   .contact .social-icons {
     padding-bottom: 15px;
+  }
+  .main-contact {
+    height: auto;
   }
 }
 @media screen and (max-width: 480px) {
@@ -926,6 +937,6 @@ footer .social-icons-right .fa {
 }
 
 .sticky {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(86, 86, 86, 0.9)), to(rgba(255, 255, 255, 0.3)));
-  background: linear-gradient(to right, rgba(86, 86, 86, 0.9), rgba(255, 255, 255, 0.3));
+  background: -webkit-gradient(linear, left top, right top, from(rgb(105, 100, 100)), to(rgba(105, 102, 102, 0.9)));
+  background: linear-gradient(to right, rgb(105, 100, 100), rgba(105, 102, 102, 0.9));
 }/*# sourceMappingURL=main.css.map */
